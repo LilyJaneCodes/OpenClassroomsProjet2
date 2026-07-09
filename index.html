@@ -27,9 +27,9 @@
 
         <!-- HEADER -->
         <header>
-            <nav>
-                <img src="./images/logo-booki.png" alt="Logo Booki">
-                <ul>
+            <nav class="nav">
+                <img src="./images/logo/Booki.png" alt="Logo Booki" id="logo-booki">
+                <ul class="nav-links">
                     <li><a href="#">Hébergements</a></li>
                     <li><a href="#">Activités</a></li>
                 </ul>
@@ -37,19 +37,25 @@
         </header>
 
         <main>
-
             <!-- SECTION RECHERCHE -->
             <section class="recherche">
+
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
 
-                <form>
-                    <div class="barre de recherche">
+                <form action="#" method="get" class="formulaire-recherche">
+                    <div class="icone-recherche">
                         <i class="fa-solid fa-location-dot"></i>
-                        <input type="text" placeholder="Marseille, France">
-                        <button type="submit">Rechercher</button>
                     </div>
+
+                    <div class="barre-de-recherche">
+                        <label for="ville" class="sr-only">Ville</label>
+                        <input type="text" name="ville" id="ville" placeholder="Marseille, France" autofocus required>
+                    </div>
+
+                     <button type="submit" class="bouton-rechercher" aria-label="Lancer la recherche">Rechercher</button>
                 </form>
+
             </section>
 
             <!-- SECTION FILTRES -->
@@ -70,7 +76,7 @@
                     </button>
 
                     <button class="filtre">
-                        <i class="fa-solid fa-gem"></i> Nos pépites
+                        <i class="fa-solid fa-fire"></i> Nos pépites
                     </button>
                 </div>
 
