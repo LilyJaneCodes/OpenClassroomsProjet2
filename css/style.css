@@ -53,12 +53,12 @@ a {
 }
 
 .card-title {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .card-subtitle {
     margin: 0px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .card:hover {
@@ -298,7 +298,7 @@ a {
 
 .hebergements-cards .card-content {
     width: 100%;
-    padding-left: 15px;
+    padding-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -369,7 +369,7 @@ a {
 }
 
 .populaires-cards .card-title {
-    margin-top: 10px;
+    margin-top: 8px;
     margin-bottom: 4px;
 }
 
@@ -399,8 +399,12 @@ a {
 }
 
 .activites-cards .card-content {
-    padding: 20px 20px 20px;
+    height: 50px;
+    padding: 0 15px;
     background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .activites-cards .card {
@@ -418,7 +422,7 @@ a {
 
 .activites-cards img {
     width: 100%;
-    height: 350px;
+    height: 320px;
     border-top-left-radius: 7%;
     border-top-right-radius: 7%;
 }
@@ -432,11 +436,13 @@ footer {
     padding: 25px 25px;
     background-color: #F2F2F2;
     gap: 40px;
+    margin-top: 25px;
 }
 
 footer h3 {
     margin-top: 0;
     margin-bottom: 15px;
+    font-size: 16px;
 }
 
 .footer-links {
@@ -446,6 +452,7 @@ footer h3 {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    font-size: 14px;
 }
 
 .footer-column {
