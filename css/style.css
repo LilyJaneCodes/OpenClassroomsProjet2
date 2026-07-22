@@ -78,6 +78,7 @@ a {
 #logo-booki {
     height: 20px;
     width: auto;
+    margin-top: 10px;
 }
 
 /* Structure du header */
@@ -119,7 +120,7 @@ a {
 }
 
 .recherche h1 {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 0px;
 }
 
@@ -193,15 +194,8 @@ a {
 
 /****** Filtres ***********/
 
-.filtres h2 {
-    font-size: 18px;
-}
-
-.filtres-container {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-top: 20px;
+.filtres {
+    margin-top: 30px;
 }
 
 .filtre {
@@ -214,6 +208,17 @@ a {
     font-weight: 700;
     display: flex;
     align-items: center;
+}
+
+.filtres h2 {
+    font-size: 18px;
+}
+
+.filtres-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .filtre i {
@@ -242,7 +247,8 @@ a {
 .info {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-size: 16px;
 }
 
