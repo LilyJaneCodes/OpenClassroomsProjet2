@@ -1,4 +1,249 @@
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+/****** Navigation ***********/
+
+header {
+    width: 100vw;                /* toute la largeur de l’écran */
+    margin-left: calc(50% - 50vw); /* annule les marges du container */
+    margin-right: calc(50% - 50vw);
+    border-bottom: 1px solid #F2F2F2; /* barre grise */
+}
+
+.nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo centré, prend toute la largeur visuellement */
+#logo-booki {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.nav-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+.nav-links li {
+    flex: 1;              /* chaque li prend une part égale */
+}
+
+.nav-links a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    border-top: none !important;                 /* on annule la bordure du haut */
+    border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover {
+  color: var(--main-color);
+  border-bottom: 2px solid var(--main-color);
+}
+
+/****** Recherche ***********/
+
+.recherche h1 {
+    font-size: 22px;
+    margin-bottom: 0px;
+}
+
+.recherche p {
+    margin-top: 8px;
+    padding: 0;
+}
+
+.formulaire-recherche {
+    width: 100%;
+    margin-top: 12px;
+}
+
+.icone-recherche {
+    padding: 17px 18px; /* un peu plus grande */
+}
+
+.barre-de-recherche {
+    height: 50px; /* plus haute */
+    flex-grow: 2;
+}
+
+.barre-de-recherche input {
+    height: 45px;
+    font-size: 16px; /* légèrement plus grand */
+    flex: 2;
+}
+
+.bouton-rechercher {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-left: -10px;
+}
+
+/* cacher le texte sur mobile */
+.bouton-rechercher .texte-rechercher {
+    display: none;
+}
+
+.bouton-rechercher .icone-loupe {
+    display: flex;          /* on la rend visible */
+    justify-content: center;
+    align-items: center;
+}
+
+/* afficher la loupe sur mobile */
+.bouton-rechercher .icone-loupe i {
+    font-size: 16px;
+    color: white;
+}
+
+/****** Filtres ***********/
+
+.filtres-header {
+    display: block; /* le titre passe au-dessus */
+}
+
+.filtres-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes égales */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.filtre {
+    font-size: 14px;
+}
+
+.info {
+    align-items: flex-start; /* l’icône reste en haut, le texte s’étale */
+    width: 100%;             /* prend toute la largeur */
+    margin-bottom: 10px;
+    font-size: 15px;         /* texte légèrement plus petit si tu veux */
+    line-height: 1.4;        /* meilleure lisibilité */
+}
+
+/****** Hebergements et Populaires ***********/
+
+.hebergements-et-populaires {
+    flex-direction: column-reverse;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);    /* sort de la main-container */
+    margin-right: calc(50% - 50vw);
+}
+
+.hebergements-et-populaires section {
+    border-radius: 0;
+}
+
+/****** Populaires ***********/
+
+.populaires {
+    background-color: #F2F2F2;
+}
+
+.populaires-cards {
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.populaires-cards a {
+    display: block;
+    width: 100%;
+}
+
+.populaires-cards .card {
+    margin-top: 0;
+}
+
+/****** Hebergements ***********/
+
+.hebergements-et-populaires .hebergements {
+    background-color: white;
+    margin-top: 0; /* réduit l'espace blanc */
+    padding-top: 0;
+}
+
+.hebergements-cards {
+    flex-direction: column;
+    gap: 0px;
+}
+
+.hebergements-cards a {
+    display: block;
+    width: 100%;
+}
+
+.hebergements-cards .card {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.hebergements-cards img {
+    height: 110px;
+}
+
+.show-more {
+    margin-top: 15px;
+}
+
+/****** Activités ***********/
+
+.activites {
+    padding: 0;
+}
+
+.activites-cards {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.activites-cards .card {
+    width: 100%;
+}
+
+.activites-cards img {
+    height: 140px;
+}
+
+.activites .card-title {
+    font-size: 16px;
+}
+
+/****** Footer ***********/
+
+footer {
+    width: 100vw;                     
+    margin-left: calc(50% - 50vw);    
+    margin-right: calc(50% - 50vw);
+    padding: 25px 35px;             
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+}
+
+@media (max-width: 360px) {
+.filtre {
+    font-size: 12px;
+    padding: 10px 12px;
+}
+
+.section-title {
+    font-size: 18px;
+}
 }
